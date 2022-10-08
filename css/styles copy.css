@@ -66,6 +66,10 @@ padding-top:10px;
 padding-bottom:10px;
 } /* Logo formating */
 
+
+.logo-black{
+color:var(--main-color);
+}
 .title-white,.link-white, .btn-portfolio:hover,
 .btn-portfolio:focus{
 color:var(--white-color);
@@ -245,11 +249,15 @@ font-weight: 700;
     width: 20px;
 }
 
-.social-list__link {
+.social-list__link,
+.footer__social-link {
     transition: background-color var(--animation-time) var(--timing-function), fill var(--animation-time) var(--timing-function);
 }
+
 .social-list__link:hover,
-.social-list__link:focus {
+.social-list__link:focus,
+.footer__social-link:hover,
+.footer__social-link:focus {
     fill: var(--white-color);
     background-color: #188CE8;
 }
@@ -305,7 +313,7 @@ font-size: 16px;
 }
 /* formating footer  */
  /* formating hero section  */
-.btn-portfolio:hover,
+.brand-button, .btn-portfolio:hover,
 .btn-portfolio:focus{
 background-color:var(--brand-color) ; /* set background "brand" color for elements  */
 }
@@ -324,7 +332,6 @@ background-color: var(--background-color);
 padding: 10px 32px;
 }
 .brand-button{
-background-color: var(--brand-color);
 display:block;
 font-weight: 700;
 font-size: 16px;
